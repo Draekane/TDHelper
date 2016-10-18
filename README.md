@@ -1,0 +1,2 @@
+# TDHelper
+Tournament Director Helper
