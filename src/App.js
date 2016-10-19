@@ -1,18 +1,12 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Layout from './app/containers/common/layout';
+import '../src/app/sass/app.scss';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Tournament Director Helper</h2>
-        </div>
-        <p className="App-intro">
-          Tournament Helper Goes Here
-        </p>
+        <Layout />
       </div>
     );
   }

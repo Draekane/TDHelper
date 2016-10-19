@@ -1,0 +1,63 @@
+﻿////////////////////////////////////////////////////////////////////////////////////////////////
+// MIXINS
+////////////////////////////////////////////////////////////////////////////////////////////////
+@mixin centerInlineBlock {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+@mixin center {
+  text-align: center;
+  vertical-align: middle;
+}
+
+@mixin rowHandle{
+  font-weight: 500;
+  padding: 4px 7px;
+  border-radius: 0 0 7px 0;
+}
+
+@mixin headerFont {
+  font-size: 36px;
+  color: #cccccc;
+  font-family: Helvetica;
+}
+
+@mixin cursorPointer {
+  cursor: pointer;
+}
+
+@mixin noPadding {
+  padding: 0 !important;
+}
+
+@mixin boldFont {
+  font-weight: bold;
+}
+
+@media (min-width: 1200px){
+  .container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px){
+  .container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px){
+  .container {
+    width: 100%;
+  }
+}
+
+@mixin noWrapWithEllipsis {
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
