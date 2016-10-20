@@ -1,7 +1,8 @@
 ﻿﻿import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
 import createLogger from 'redux-logger';
 import thunkMiddleware from 'redux-thunk';
-import appReducers from '../app/reducers/common/rootReducer';
+import appReducers from '../reducers/common/rootReducer';
+
 
 export default function configureStore(clientReducers, includeDevTools, clientMiddlewares) {
     if (!clientMiddlewares instanceof Array) {

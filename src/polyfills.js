@@ -1,13 +1,13 @@
 ﻿export default function () {
     if (!String.prototype.startsWith) {
-        String.prototype.startsWith = function (searchString, position) {
+        String.prototype.startsWith = function (searchString, position) { /* eslint-ignore no-extend-native */
             position = position || 0;
             return this.indexOf(searchString, position) === position;
         };
     }
 
     if (!Array.prototype.includes) {
-        Array.prototype.includes = function(searchElement /*, fromIndex*/ ) {
+        Array.prototype.includes = function(searchElement /*, fromIndex*/ ) { /* eslint-ignore no-extend-native */
             'use strict';
             var O = Object(this);
             var len = parseInt(O.length) || 0;

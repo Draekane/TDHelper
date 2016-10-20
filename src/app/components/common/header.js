@@ -38,7 +38,7 @@ class AppHeader extends React.Component {
         const headerImage = (this.props.config && this.props.config.headerImage) ? this.props.config.headerImage : '';
         let headerContent;
         if (headerImage.type === 'image') {
-            headerContent = (<img className="header-image" src={headerImage.src} ></img>);
+            headerContent = (<img className="header-image" src={headerImage.src} role="presentation" ></img>);
         } else {
             headerContent = (<i className={headerImage.src} />);
         }

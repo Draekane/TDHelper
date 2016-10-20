@@ -97,6 +97,10 @@ module.exports = {
       }
     ],
     loaders: [
+      {
+        test: /\.(scss|css)$/,
+        loader: ExtractTextPlugin.extract('style', 'css?sourceMap&modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss!sass')
+      },
       // Process JS with Babel.
       {
         test: /\.(js|jsx)$/,

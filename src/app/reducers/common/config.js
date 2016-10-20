@@ -30,8 +30,8 @@ const initialState = {
             path: 'HomePage',  // name of the route
             default: 'true',      // Indicates if this is the default route to load on application start
             navTitle: 'My Home Page',     // Title of nav element; leave nav elements empty if you do not want to have a UI nav element created
-            image: { src: 'src/img/home.png', type: 'image' },     // Image of nav element; leave nav elements if you do not want to have a UI nav element created
-            component: home      // specifies the component to handle the route per the routeComponents dictionary defined in the index.js file
+            image: { src: 'src/img/home.png', type: 'image' }     // Image of nav element; leave nav elements if you do not want to have a UI nav element created
+            // component: home      // specifies the component to handle the route per the routeComponents dictionary defined in the index.js file
         }
     ],
     loginImage: 'src/img/CatManIcon.png'
